@@ -33,9 +33,9 @@ public class Preguntas  extends PApplet{
     public void draw() {
         
         background(background); 
+        //rect(23, 375, 165, 50);
         
-        
-        if ( mouseX>=0 && mouseX<=375 && mouseY>=0 && mouseY<=328){
+        if ( mouseX>=23 && mouseX<=188 && mouseY>=375 && mouseY<=425){
            if (mousePressed == true){
                ChooseMap chooseMaps = new ChooseMap();
                chooseMaps.runApp();

@@ -7,7 +7,6 @@ import processing.core.PImage;
 public class MenuPrincipal extends PApplet{
 
     PImage background;
-    PImage credits;
     PImage keys;
     
     @Override
@@ -18,7 +17,6 @@ public class MenuPrincipal extends PApplet{
     @Override
     public void setup() {
         background=loadImage("images/Pp.png");
-        credits =loadImage("images/PostCreditos.png");
         keys =loadImage("images/Teclas.png");
 
     }
@@ -27,9 +25,6 @@ public class MenuPrincipal extends PApplet{
     public void draw() {
         background(background); 
         
-        if(mouseX>=295 && mouseX<=365 && mouseY>=550 && mouseY<=610){
-            image(credits,70,30,300,250);// fija
-        }
         
         if(mouseX>=10 && mouseX<=90 && mouseY>=550 && mouseY<=620){
             image(keys,90,420,200,200);// fija
